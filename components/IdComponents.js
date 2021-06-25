@@ -8,7 +8,6 @@ const POSTS_QUERY = gql`
   query MyQuery($data: ID!) {
     product(idType: SLUG, id: $data) {
       name
-      productId
       slug
       image {
         slug
@@ -23,14 +22,8 @@ const POSTS_QUERY = gql`
 `;
 
 const IdComponents = (props) => {
-  const {
-    cart,
-    toggleCart,
-    price,
-    togglePrice,
-    count,
-    toggleCount,
-  } = useContext(AppContext);
+  const { cart, toggleCart, price, togglePrice, count, toggleCount } =
+    useContext(AppContext);
 
   const { loading, error, data } = useQuery(POSTS_QUERY, {
     variables: {

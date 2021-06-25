@@ -13,7 +13,6 @@ const POSTS_QUERY = gql`
         name
         slug
         shortDescription
-        productId
         image {
           slug
           sourceUrl
@@ -29,14 +28,8 @@ const POSTS_QUERY = gql`
 const FirstThree = (props) => {
   const { cat, counter, number } = props;
 
-  const {
-    cart,
-    toggleCart,
-    price,
-    togglePrice,
-    count,
-    toggleCount,
-  } = useContext(AppContext);
+  const { cart, toggleCart, price, togglePrice, count, toggleCount } =
+    useContext(AppContext);
 
   const { loading, error, data } = useQuery(POSTS_QUERY, {
     variables: {

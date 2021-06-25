@@ -12,7 +12,6 @@ const POSTS_QUERY = gql`
         name
         slug
         shortDescription
-        productId
         image {
           slug
           sourceUrl
@@ -26,15 +25,9 @@ const POSTS_QUERY = gql`
 `;
 
 const CategoryComponent = (props) => {
-  const {
-    cart,
-    toggleCart,
-    price,
-    togglePrice,
-    count,
-    toggleCount,
-  } = useContext(AppContext);
-  //console.log(props.cat);
+  const { cart, toggleCart, price, togglePrice, count, toggleCount } =
+    useContext(AppContext);
+  console.log(props.cat);
   const { loading, error, data } = useQuery(POSTS_QUERY, {
     variables: {
       data: props.cat,
