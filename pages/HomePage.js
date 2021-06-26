@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <BackgroundImage />
+      <BackgroundImage id="home_page" />
       <div className="container">
         <FirstInfo />
         <Products count1={2} count2={3} number={4} />
