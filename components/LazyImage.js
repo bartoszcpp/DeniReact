@@ -7,7 +7,7 @@ const LazyImages = (props) => {
       ) : (
         <img
           className="img-fluid"
-          src="http://wordpress.deniscarpe.pl/wp-content/uploads/woocommerce-placeholder.png"
+          src="https://wordpress.deniscarpe.pl/wp/wp-content/uploads/woocommerce-placeholder.png"
           alt="woocommerce-placeholder"
         />
       )}
