@@ -6,21 +6,15 @@ import { AppContext } from "../contex/AppContex";
 import Footer from "../Footer";
 
 const CartContainer = () => {
-  const {
-    cart,
-    toggleCart,
-    price,
-    togglePrice,
-    count,
-    toggleCount,
-  } = useContext(AppContext);
+  const { cart, toggleCart, price, togglePrice, count, toggleCount } =
+    useContext(AppContext);
 
   console.log(cart);
   console.log(price);
   return (
     <>
       <Header />
-      <BackgroundImage />
+      <BackgroundImage id="home_page" />
       <div className="content-wrap-cart">
         {cart ? (
           <div className="cart-wrapper">

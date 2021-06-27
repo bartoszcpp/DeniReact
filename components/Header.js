@@ -3,6 +3,8 @@ import Nav from "react-bootstrap/Nav";
 import React, { useState, useContext } from "react";
 import Link from "next/link";
 import { AppContext } from "./contex/AppContex";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const { cart, toggleCart, price, togglePrice, count, toggleCount } =
@@ -24,9 +26,12 @@ const Header = () => {
               <Nav.Link href="/contact">KONTAKT</Nav.Link>
             </Nav>
           </Navbar.Collapse>
-          <div className="Header__icons">
-            <Nav.Link href="#home">{count}</Nav.Link>
-          </div>
+          <Nav.Link href="/cart">
+            <div className="Header__icons">
+              <FontAwesomeIcon icon={faShoppingCart} />
+              <span>{count}</span>
+            </div>
+          </Nav.Link>
         </div>
       </Navbar>
     </>

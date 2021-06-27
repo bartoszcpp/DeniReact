@@ -13,7 +13,7 @@ import "../style/ContactForm.scss";
 import "../style/Footer.scss";
 
 const client = new ApolloClient({
-  uri: "http://deniscarpe.pl/wp/graphql",
+  uri: "http://wordpress.deniscarpe.pl/graphql",
 });
 
 // This default export is required in a new `pages/_app.js` file.

@@ -7,4 +7,27 @@
     flex-basis: unset;
     flex-grow: 0;
   }
+
+  &__icons {
+    display: flex;
+
+    svg {
+      width: 30px;
+      height: auto;
+      vertical-align: middle;
+    }
+
+    svg,
+    span {
+      margin: auto;
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    &:hover {
+      svg,
+      span {
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
 }

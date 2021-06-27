@@ -76,7 +76,7 @@ const CategoryComponent = (props) => {
             ) : (
               <img
                 className="card-img-top"
-                src="http://deniscarpe.pl/wp/wp-content/uploads/woocommerce-placeholder.png"
+                src="http://wordpress.deniscarpe.pl/wp-content/uploads/woocommerce-placeholder.png"
                 alt="woocommerce-placeholder"
               />
             )}
