@@ -43,12 +43,12 @@ const BackgroundImage = (props) => {
     <div className="Hero" style={divStyle}>
       <div className="Hero__overlay"></div>
       <div className="Hero__content">
-        <div className="Hero__flag">
-          <div className="Hero__flag--red"></div>
-          <div className="Hero__flag--white"></div>
+        <div className="Hero__flag Polish__flag">
+          <div className="Hero__flag--red Polish__flag--red"></div>
+          <div className="Hero__flag--white Polish__flag--white"></div>
         </div>
         <h1>{data.post.acf_field.homeText1}</h1>
-        <h2>{data.post.acf_field.homeText1}</h2>
+        <h2>{data.post.acf_field.homeText2}</h2>
       </div>
     </div>
   );

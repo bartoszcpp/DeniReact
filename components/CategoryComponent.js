@@ -28,11 +28,22 @@ const CategoryComponent = (props) => {
   const { cart, toggleCart, price, togglePrice, count, toggleCount } =
     useContext(AppContext);
   console.log(props.cat);
+
+  let cat;
+
+  if (props.cat === "all") {
+    cat = "";
+  } else {
+    cat = props.cat;
+  }
+
+  console.log(cat, "cat");
   const { loading, error, data } = useQuery(POSTS_QUERY, {
     variables: {
-      data: props.cat,
+      data: cat,
     },
   });
+
   if (loading)
     return (
       <div className="lds-ring">
@@ -54,13 +65,22 @@ const CategoryComponent = (props) => {
         key={product.productId}
         className="col-lg-4 col-sm-6 oneOfProduct-border"
       >
-        <Link href="/[cat]/[id]" as={`/${props.cat}/${product.slug}`}>
+        <Link href="/products/[id]" as={`/products/${product.slug}`}>
           <div className="card">
-            <img
-              className="card-img-top"
-              src={product.image.sourceUrl}
-              alt={product.image.slug}
-            />
+            {product.image ? (
+              <img
+                className="card-img-top"
+                src={product.image.sourceUrl}
+                alt={product.image.slug}
+              />
+            ) : (
+              <img
+                className="card-img-top"
+                src="http://deniscarpe.pl/wp/wp-content/uploads/woocommerce-placeholder.png"
+                alt="woocommerce-placeholder"
+              />
+            )}
+
             <div className="card-body">
               <h5 className="card-title">{product.name}</h5>
               <h6>{thisPrice}</h6>

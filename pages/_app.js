@@ -4,8 +4,13 @@ import "cross-fetch/polyfill";
 import { ApolloProvider } from "@apollo/react-hooks";
 import ApolloClient from "apollo-boost";
 import { AppProvider } from "../components/contex/AppContex";
+import "../style/global.scss";
 import "../style/Header.scss";
 import "../style/Hero.scss";
+import "../style/Products.scss";
+import "../style/ContentBlock.scss";
+import "../style/ContactForm.scss";
+import "../style/Footer.scss";
 
 const client = new ApolloClient({
   uri: "http://deniscarpe.pl/wp/graphql",

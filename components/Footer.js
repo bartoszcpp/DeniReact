@@ -5,10 +5,10 @@ const Footer = () => {
     <footer>
       <img className="img-fluid logoPng" src="/logo.png" alt="" /> <br />
       <div className="footerMenu">
-        <Link href="/damskie">Damskie</Link>
-        <Link href="/meskie">Męskie</Link>
-        <Link href="/zegary">Zegary</Link>
-        <Link href="/zzgrawer">Zegarki z grawerem</Link>
+        <Link href="/">STRONA GŁÓWNA</Link>
+        <Link href="/collections/obuwie">OBUWIE</Link>
+        <Link href="/collections/akcesoria">AKCESORIA</Link>
+        <Link href="/contact">KONTAKT</Link>
       </div>
       <p>studio-web.pl</p>
     </footer>

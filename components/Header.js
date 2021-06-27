@@ -18,10 +18,10 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="Header__collapse" id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/damskie">DAMSKIE</Nav.Link>
-              <Nav.Link href="/meskie">MĘSKIE</Nav.Link>
-              <Nav.Link href="/zegary">ZEGARY</Nav.Link>
-              <Nav.Link href="/zzgrawer">GRAWER</Nav.Link>
+              <Nav.Link href="/">STRONA GŁÓWNA</Nav.Link>
+              <Nav.Link href="/collections/obuwie">OBUWIE</Nav.Link>
+              <Nav.Link href="/collections/akcesoria">AKCESORIA</Nav.Link>
+              <Nav.Link href="/contact">KONTAKT</Nav.Link>
             </Nav>
           </Navbar.Collapse>
           <div className="Header__icons">

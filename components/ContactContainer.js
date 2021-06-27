@@ -10,7 +10,7 @@ const ContactContainer = () => {
           <ContactForm />
         </div>
         <div className="col-lg-6 col-sm-4 daneKontaktowe contact">
-          <h3>WATCHES for you</h3>
+          <h3>Deni</h3>
           <p className="font-weight-bold">Adres</p>
           <p>ul. Marka 65</p>
           <p>37-100 Łańcut</p>
