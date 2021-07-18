@@ -11,6 +11,9 @@ import "../style/Products.scss";
 import "../style/ContentBlock.scss";
 import "../style/ContactForm.scss";
 import "../style/Footer.scss";
+import "../style/ProductOverview.scss";
+import "flickity/dist/flickity.min.css";
+//import "../style/flickity.css";
 
 const client = new ApolloClient({
   uri: "https://wordpress.deniscarpe.pl/wp/graphql",
